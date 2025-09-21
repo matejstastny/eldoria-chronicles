@@ -39,7 +39,7 @@ Download the game from the [latest release](https://github.com/kireiiiiiiii/eldo
 2. Open the `.dmg` file and drag `Eldoria Chronicles.app` into the **Applications** folder.
 3. Launch the game from **Applications**.
 
-## ⚙️ DMG Creation Script (For macOS Developers)
+## ⚙️ Development Guide
 
 If you're working on packaging Eldoria Chronicles for macOS, you can use the included **DMG Creation Script**, to create a pretty DMG installer with a proper window size and background. I made this script because the DMG files exported from Godot 4 are not pretty and user-friendly. You can find all the files for this process in the [.gdignore](https://github.com/kireiiiiiiii/eldoria-chronicles/tree/main/.gdignore) directory, as I don't want them to be imported by Godot.
 
@@ -77,16 +77,3 @@ chmod +x build-dmg.sh   # Make the script executable
 
 This will generate a `.dmg` file in the `build/` directory.
 
-## 📌 Development Goals
-
-- Add a way for the player to fight back
-- Expand the story & world-building
-- Add a menu screen
-
-## 🛠️ Issues & Bug reports
-
-- Found a bug? Report it [here](https://github.com/kireiiiiiiii/eldoria-chronicles/issues).
-
-## 💬 Contact & Feedback
-
-If you have questions, feedback, or just want to chat, feel free to reach out on Instagram: [@\_kireiiiiiiii](https://www.instagram.com/_kireiiiiiiii)!
