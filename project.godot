@@ -12,6 +12,7 @@ config_version=5
 
 config/name="Eldoria Chronicles"
 config/description="A 2D game made with the Godot 4 engine, about a knight collecting coins"
+config/version="1.1.0"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)

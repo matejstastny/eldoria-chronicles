@@ -40,7 +40,7 @@ BACKGROUND_IMG="dmg-background.png"   # Background image shown in the installer 
 
 # Output
 OUTPUT_DIR="build"                     # Final DMG is written here
-NEW_DMG_NAME="eldoria-chronicles-1.0.0-mac.dmg"
+NEW_DMG_NAME="eldoria-chronicles-1.1.0-mac.dmg"
 
 # Internals
 TEMP_DIR="temp"                        # Scratch space for the extracted .app (deleted after)

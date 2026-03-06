@@ -13,11 +13,11 @@ A 2D platformer built with [Godot 4](https://godotengine.org/). Play as a knight
 
 ## Controls
 
-| Action     | Keyboard        | Gamepad         |
-|------------|-----------------|-----------------|
-| Move left  | `A` / `←`       | Left stick left |
-| Move right | `D` / `→`       | Left stick right|
-| Jump       | `Space` / `↑`   | `A` button      |
+| Action     | Keyboard      | Gamepad          |
+| ---------- | ------------- | ---------------- |
+| Move left  | `A` / `←`     | Left stick left  |
+| Move right | `D` / `→`     | Left stick right |
+| Jump       | `Space` / `↑` | `A` button       |
 
 ## Project structure
 
@@ -39,10 +39,10 @@ eldoria-chronicles/
 
 The project has two export presets configured in `export_presets.cfg`:
 
-| Preset        | Platform         | Output path                       |
-|---------------|------------------|-----------------------------------|
-| MacOS         | macOS (universal)| `tools/source/eldoria-chronicles-raw.dmg` |
-| Windows       | Windows x86-64   | `tools/source/eldoria-chronicles-raw.exe` |
+| Preset  | Platform          | Output path                               |
+| ------- | ----------------- | ----------------------------------------- |
+| MacOS   | macOS (universal) | `tools/source/eldoria-chronicles-raw.dmg` |
+| Windows | Windows x86-64    | `tools/source/eldoria-chronicles-raw.exe` |
 
 ### macOS distributable DMG
 
@@ -52,7 +52,7 @@ After exporting the macOS preset from Godot, run:
 ./tools/build-dmg.sh
 ```
 
-This mounts the raw Godot DMG, extracts the `.app`, and repackages it with a custom background into `tools/build/eldoria-chronicles-1.0.0-mac.dmg`. Requires [`create-dmg`](https://github.com/create-dmg/create-dmg) (the script will offer to install it via Homebrew if missing).
+This mounts the raw Godot DMG, extracts the `.app`, and repackages it with a custom background into `tools/build/eldoria-chronicles-<version>-mac.dmg`. Requires [`create-dmg`](https://github.com/create-dmg/create-dmg) (the script will offer to install it via Homebrew if missing).
 
 ### GDScript formatting
 
