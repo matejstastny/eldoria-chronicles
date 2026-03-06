@@ -61,3 +61,7 @@ This mounts the raw Godot DMG, extracts the `.app`, and repackages it with a cus
 ```
 
 Strips semicolons and converts tabs to 4-space indentation across all `.gd` files. Safe to run from any directory.
+
+## Assets
+
+The game uses the [Brackeys Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle) asset pack, released under [Creative Commons Zero (CC0)](https://creativecommons.org/publicdomain/zero/1.0/).
