@@ -1,6 +1,6 @@
 # Eldoria Chronicles
 
-A 2D platformer built with [Godot 4](https://godotengine.org/). Play as a knight, collect all the coins in the level, and step through the portal to complete the run — as fast as you can.
+A 2D platformer built with [Godot 4](https://godotengine.org/). Play as a knight, collect all the coins in the level, and step through the portal to complete the run — as fast as you can. Here is a preview video (low quality and FPS because of GitHub limitations):
 
 ![Gameplay](assets/video/gameplay.webp)
 
