@@ -39,8 +39,8 @@ The project has two export presets configured in `export_presets.cfg`:
 
 | Preset        | Platform         | Output path                       |
 |---------------|------------------|-----------------------------------|
-| macOS kirei   | macOS (universal)| `tools/source/eldoria-chronicles-raw.dmg` |
-| Windows kirei | Windows x86-64   | `tools/source/eldoria-chronicles-raw.exe` |
+| MacOS         | macOS (universal)| `tools/source/eldoria-chronicles-raw.dmg` |
+| Windows       | Windows x86-64   | `tools/source/eldoria-chronicles-raw.exe` |
 
 ### macOS distributable DMG
 
@@ -59,8 +59,3 @@ This mounts the raw Godot DMG, extracts the `.app`, and repackages it with a cus
 ```
 
 Strips semicolons and converts tabs to 4-space indentation across all `.gd` files. Safe to run from any directory.
-
-## Requirements
-
-- Godot 4.2+
-- macOS (for `build-dmg.sh` and `format.sh`)
