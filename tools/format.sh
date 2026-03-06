@@ -1,11 +1,12 @@
 #!/bin/bash
 set -e
 
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 # format.sh — Formats all .gd files in the project.
 # Removes semicolons and normalizes indentation (tabs -> 4 spaces).
 # Run from any directory; the script always operates on the project root.
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
+
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
