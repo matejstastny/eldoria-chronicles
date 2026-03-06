@@ -1,23 +1,30 @@
 #!/bin/bash
+set -e
 
 # ──────────────────────────────────────────────────────────────────────────────
-# Script Name: format.sh
-# Purpose: This script formats all .gd files in the current directory by removing
-#          semicolons and replacing tabs with spaces.
+# format.sh — Formats all .gd files in the project.
+# Removes semicolons and normalizes indentation (tabs -> 4 spaces).
+# Run from any directory; the script always operates on the project root.
 # ──────────────────────────────────────────────────────────────────────────────
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 echo ""
-find . -type f -name "*.gd" | while read -r file; do
-    echo "🔄 Processing $file"
+echo "Formatting .gd files in: $PROJECT_ROOT"
+echo ""
+
+while IFS= read -r file; do
+    echo "  Processing $file"
     if ! sed -i '' 's/;//g' "$file"; then
-        echo "❌ Failed to remove semicolons in file '$file'."
+        echo "Error: Failed to remove semicolons in '$file'."
         exit 1
     fi
-
     if ! sed -i '' 's/\t/    /g' "$file"; then
-        echo "❌ Failed to replace tabs in file '$file'."
+        echo "Error: Failed to replace tabs in '$file'."
         exit 1
     fi
-done
+done < <(find "$PROJECT_ROOT" -type f -name "*.gd")
 
-echo "✅ Formatting complete!"
+echo ""
+echo "Done."

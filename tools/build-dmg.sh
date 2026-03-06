@@ -3,7 +3,13 @@
 # ───────────────────────────────────────────────────────────────────────────────
 # DMG Creation Script for "Eldoria Chronicles"
 # Extracts an existing Godot-built DMG, replaces the background, and repackages it.
+# Run from any directory; the script always operates relative to tools/.
 # ───────────────────────────────────────────────────────────────────────────────
+
+# ─── Locate script directory ────────────────────────────────────────────────────
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
 
 # ─── Configuration ─────────────────────────────────────────────────────────────
 

@@ -18,11 +18,11 @@ mono_crash.*.json
 .DS_Store
 Thumbs.db
 
-# DMG building
-.gdignore/build/
-.gdignore/source/*.dmg
-.gdignore/source/*.exe
-.gdignore/source/*.pck
+# Build artifacts
+tools/build/
+tools/source/*.dmg
+tools/source/*.exe
+tools/source/*.pck
 *.dmg
 *.exe
-!.gdignore/source/rcedit-x64.exe
+!tools/source/rcedit-x64.exe
