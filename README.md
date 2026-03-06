@@ -2,6 +2,8 @@
 
 A 2D platformer built with [Godot 4](https://godotengine.org/). Play as a knight, collect all the coins in the level, and step through the portal to complete the run — as fast as you can.
 
+https://github.com/kireiiiiiiii/eldoria-chronicles/raw/main/assets/video/gameplay.mp4
+
 ## Gameplay
 
 - Collect every coin in the level to unlock the portal
